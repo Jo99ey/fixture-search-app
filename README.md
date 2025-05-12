@@ -7,7 +7,7 @@ A simple Next.js application to upload match data and search fixtures by team na
 - **Framework**: Next.js (App Router)
 - **Styling**: Tailwind CSS
 - **Database**: MongoDB (via `mongodb` driver)
-- **CSV Parsing**: `csv-parse/sync` (support for `.csv` and `.xlsx`)
+- **CSV Parsing**: `csv-parse/sync` 
 - **Components**:
 
   - Server Components: main page, search page
