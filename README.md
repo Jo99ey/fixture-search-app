@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fixture Search App
 
-## Getting Started
+A simple Next.js application to upload match data and search fixtures by team name.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS
+- **Database**: MongoDB (via `mongodb` driver)
+- **CSV Parsing**: `csv-parse/sync` (support for `.csv` and `.xlsx`)
+- **Components**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - Server Components: main page, search page
+  - Client Components: file upload, data cleaner, search section
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Deployment**: Vercel + MongoDB Atlas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Use
 
-## Learn More
+1. Clone and install:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/your-username/fixture-search-app.git
+   cd fixture-search-app
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Add environment variable in `.env.local`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```env
+   MONGODB_URI=<your MongoDB connection>
+   ```
 
-## Deploy on Vercel
+3. Run in development:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   Open `http://localhost:3000` in your browser.
+
+4. On the main page:
+
+   - Upload a `.csv` or `.xlsx` file of fixtures.
+   - Click **Search** to go to the search page.
+
+5. On the search page:
+
+   - Type a team name to see matching fixtures in real time.
+   - Click a fixture card to view detailed information.
+
+Enjoy!
+© 2025 Joey ([LinkedIn](https://www.linkedin.com/in/joey-zhuyun-chen/))
