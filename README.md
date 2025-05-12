@@ -1,6 +1,9 @@
 # Fixture Search App
 
 A simple Next.js application to upload match data and search fixtures by team name.
+Live Demo: https://fixture-search-app-44c5.vercel.app/
+Enjoy!
+© 2025 Joey ([LinkedIn](https://www.linkedin.com/in/joey-zhuyun-chen/))
 
 ## Tech Stack
 
@@ -49,5 +52,4 @@ A simple Next.js application to upload match data and search fixtures by team na
    - Type a team name to see matching fixtures in real time.
    - Click a fixture card to view detailed information.
 
-Enjoy!
-© 2025 Joey ([LinkedIn](https://www.linkedin.com/in/joey-zhuyun-chen/))
+
