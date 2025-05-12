@@ -20,7 +20,7 @@ A simple Next.js application to upload match data and search fixtures by team na
 1. Clone and install:
 
    ```bash
-   git clone https://github.com/your-username/fixture-search-app.git
+   git clone https://github.com/Jo99ey/fixture-search-app.git
    cd fixture-search-app
    npm install
    ```
