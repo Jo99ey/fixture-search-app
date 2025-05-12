@@ -41,7 +41,7 @@ A simple Next.js application to upload match data and search fixtures by team na
 
 4. On the main page:
 
-   - Upload a `.csv` or `.xlsx` file of fixtures.
+   - Upload a `.csv` file of fixtures.
    - Click **Search** to go to the search page.
 
 5. On the search page:
